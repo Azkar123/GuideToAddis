@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_detail">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/feature1car"/>
+
+       <ImageView
+           android:id="@+id/icon_BackFromProduct"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_baseline_keyboard_backspace_24"
+           android:layout_marginTop="16dp"
+           android:layout_marginStart="16dp">
+       </ImageView>
+    
+       <TextView
+           android:id="@+id/txt_product_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Nissan Patrol"
+           android:layout_below="@id/product_img"
+           android:layout_marginStart="16dp"
+           android:textColor="@color/black"
+           android:layout_marginTop="8dp"
+           android:fontFamily="@font/poppins_medium"
+           android:textSize="16sp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        android:layout_below="@id/txt_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="80dp"
+        android:textAlignment="center"
+        android:progressTint="@color/black"
+        android:layout_gravity="center"
+        style="?android:attr/ratingBarStyleSmall"
+        android:rating="3"/>
+
+     <View
+         android:id="@+id/first_line"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:layout_below="@id/ratingBar3"
+         android:layout_marginTop="15dp"
+         android:background="@drawable/line"/>
+
+
+        <ImageView
+            android:id="@+id/icon_calender"
+            android:layout_below="@id/first_line"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_planner"/>
+
+             <TextView
+                 android:id="@+id/txt_tripdate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/first_line"
+                 android:text="TRIP DATE"
+                 android:layout_toRightOf="@id/icon_calender"
+                 android:layout_marginStart="8dp"
+                 android:textSize="14sp"
+                 android:textColor="@color/black"
+                 android:layout_marginTop="10dp"
+                >
+             </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_swap_horiz_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_below="@id/txt_tripdate"/>
+    
+    <TextView
+        android:id="@+id/txt_triptimeto"
+        android:layout_below="@id/txt_tripdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunday July 8 :10:AM"
+        android:layout_toRightOf="@+id/icon_calender"
+        android:layout_marginStart="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_triptimefrom"
+        android:layout_below="@id/txt_triptimeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday July 17 :10:AM"
+        android:layout_toRightOf="@+id/icon_calender"
+        android:layout_marginStart="8dp"
+        />
+    <View
+        android:id="@+id/second_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txt_triptimefrom"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/line"/>
+
+
+    <ImageView
+        android:id="@+id/swap"
+        android:layout_below="@id/second_line"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/swap"/>
+
+    <TextView
+        android:id="@+id/txt_picup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_line"
+        android:text="PICKUP AND RETURN"
+        android:layout_toRightOf="@id/icon_calender"
+        android:layout_marginStart="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_swap_horiz_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_below="@id/txt_picup"/>
+
+    <TextView
+        android:id="@+id/txt_triplocation"
+        android:layout_below="@id/txt_picup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunday July 8 :10:AM"
+        android:layout_toRightOf="@+id/icon_calender"
+        android:layout_marginStart="8dp"
+        />
+
+    <View
+        android:id="@+id/third_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txt_triplocation"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/line"/>
+
+    <ImageView
+        android:id="@+id/icon_distance"
+        android:layout_below="@id/third_line"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_place_24"/>
+
+    <TextView
+        android:id="@+id/txt_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/third_line"
+        android:text="DISTANCE INCLUDED"
+        android:layout_toRightOf="@id/icon_calender"
+        android:layout_marginStart="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_distance1"
+        android:layout_below="@id/txt_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250miles"
+        android:layout_toRightOf="@+id/icon_distance"
+        android:layout_marginStart="8dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_distance2"
+        android:layout_below="@id/txt_distance1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.75 Change for each additional mile"
+        android:layout_toRightOf="@+id/icon_distance"
+        android:layout_marginStart="8dp"
+        />
+
+    <View
+        android:id="@+id/fourth_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txt_distance2"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/line"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_carProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/fourth_line"
+        android:layout_marginTop="16dp"
+        >
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/product_images_back"
+            android:src="@drawable/prodcutpicone"/>
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/product_images_back"
+            android:src="@drawable/produtpictwo"/>
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/product_images_back"
+            android:src="@drawable/producttrhree"/>
+
+    </LinearLayout>
+
+       <Button
+           android:id="@+id/btn_Book"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_margin="10dp"
+           android:layout_below="@+id/ll_carProduct"
+           android:text="BOOK"
+           android:backgroundTint="@color/golden_yellow"
+           android:textStyle="bold"
+           android:fontFamily="@font/maderabold"
+           />
+
+
+
+   </RelativeLayout>
+
+</ScrollView>

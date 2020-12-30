@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".CarListing">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/golden_yellow"
+        >
+        <ImageView
+            android:id="@+id/icon_backfromCarListing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:layout_marginStart="16dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAR LISTING"
+            android:fontFamily="@font/moderamedium"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_create_new_folder_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_margin="16dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_carlistingone"
+                        android:layout_width="135dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/carlistingone">
+                    </ImageView>
+
+                    <View
+                        android:id="@+id/vertical_View1"
+                        android:layout_toRightOf="@+id/img_carlistingone"
+                        android:layout_width="1dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/view_background">
+                    </View>
+
+                    <TextView
+                        android:id="@+id/carName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CAR ONE"
+                        android:layout_toRightOf="@+id/img_carlistingone"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        >
+                    </TextView>
+                    <ImageView
+                        android:id="@+id/icon_Location1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_place_24"
+                        android:layout_below="@id/carName1"
+                        android:layout_toRightOf="@+id/vertical_View1"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chennai"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@id/icon_Location1"
+                        android:layout_below="@id/carName1"
+                        android:layout_marginTop="8dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INR 20000"
+                        android:textColor="@color/design_default_color_error"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/icon_Location1"
+                        android:layout_marginRight="16dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/txt_Detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Hyundai Verna is available in 12 variants and 6 colours. Here are more Hyundai Verna details such as prices."
+                        android:layout_below="@id/vertical_View1"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkslate"
+                        android:layout_marginTop="16dp">
+                    </TextView>
+
+                    <View
+                        android:id="@+id/viewHorizontal1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/view_background"
+                        android:layout_below="@id/txt_Detail"
+                        android:layout_marginTop="8dp"
+                        >
+                    </View>
+
+                      <TextView
+
+                          android:id="@+id/txt_petrol1"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/viewHorizontal1"
+                          android:layout_marginStart="24dp"
+                          android:textSize="16dp"
+                          android:layout_marginTop="6dp"
+                          android:textColor="@color/statusbar_color"
+                          android:text="Petrol">
+                      </TextView>
+
+                       <View
+                           android:id="@+id/view1"
+                           android:layout_width="1dp"
+                           android:layout_height="30dp"
+                           android:background="@drawable/view_background"
+                           android:layout_toRightOf="@+id/txt_petrol1"
+                           android:layout_below="@id/viewHorizontal1"
+                           android:layout_marginStart="16dp">
+                       </View>
+
+
+                    <TextView
+                        android:id="@+id/txt_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewHorizontal1"
+                        android:layout_marginStart="16dp"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/view1"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/statusbar_color"
+                        android:text="555 KM">
+                    </TextView>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/view_background"
+                        android:layout_toRightOf="@+id/txt_km"
+                        android:layout_below="@id/viewHorizontal1"
+                        android:layout_marginStart="16dp">
+                    </View>
+
+                    <TextView
+                        android:id="@+id/txt_manual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewHorizontal1"
+                        android:layout_marginStart="16dp"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/view2"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/statusbar_color"
+                        android:text="MANUAL">
+                    </TextView>
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/view_background"
+                        android:layout_toRightOf="@+id/txt_manual"
+                        android:layout_below="@id/viewHorizontal1"
+                        android:layout_marginStart="16dp">
+                    </View>
+
+                    <TextView
+                        android:id="@+id/txt_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewHorizontal1"
+                        android:layout_marginStart="16dp"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/view3"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/statusbar_color"
+                        android:text="2015">
+                    </TextView>
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_margin="16dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_carlistingtwo"
+                        android:layout_width="135dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/carlistingtwo">
+                    </ImageView>
+
+                    <View
+                        android:id="@+id/vertical_View11"
+                        android:layout_toRightOf="@+id/img_carlistingtwo"
+                        android:layout_width="1dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/view_background">
+                    </View>
+
+                    <TextView
+                        android:id="@+id/carName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CAR TWO"
+                        android:layout_toRightOf="@+id/img_carlistingtwo"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        >
+                    </TextView>
+                    <ImageView
+                        android:id="@+id/icon_Location22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_place_24"
+                        android:layout_below="@id/carName2"
+                        android:layout_toRightOf="@+id/vertical_View11"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chennai"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@id/icon_Location22"
+                        android:layout_below="@id/carName2"
+                        android:layout_marginTop="8dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INR 20000"
+                        android:textColor="@color/design_default_color_error"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/icon_Location22"
+                        android:layout_marginRight="16dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/txt_Detail1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Hyundai Verna is available in 12 variants and 6 colours. Here are more Hyundai Verna details such as prices."
+                        android:layout_below="@id/vertical_View11"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkslate"
+                        android:layout_marginTop="16dp">
+                    </TextView>
+
+                    <View
+                        android:id="@+id/viewHorizontal11"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/view_background"
+                        android:layout_below="@id/txt_Detail1"
+                        android:layout_marginTop="8dp"
+                        >
+                    </View>
+
+                    <TextView
+
+                        android:id="@+id/txt_petrol2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewHorizontal11"
+                        android:layout_marginStart="24dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/statusbar_color"
+                        android:text="Petrol">
+                    </TextView>
+
+                    <View
+                        android:id="@+id/view1two"
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/view_background"
+                        android:layout_toRightOf="@+id/txt_petrol2"
+                        android:layout_below="@id/viewHorizontal11"
+                        android:layout_marginStart="16dp">
+                    </View>
+
+
+                    <TextView
+                        android:id="@+id/txt_km1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewHorizontal11"
+                        android:layout_marginStart="16dp"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/view1two"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/statusbar_color"
+                        android:text="555 KM">
+                    </TextView>
+
+                    <View
+                        android:id="@+id/view2two"
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/view_background"
+                        android:layout_toRightOf="@+id/txt_km1"
+                        android:layout_below="@id/viewHorizontal11"
+                        android:layout_marginStart="16dp">
+                    </View>
+
+                    <TextView
+                        android:id="@+id/txt_manual1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewHorizontal11"
+                        android:layout_marginStart="16dp"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/view2two"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/statusbar_color"
+                        android:text="MANUAL">
+                    </TextView>
+
+                    <View
+                        android:id="@+id/view3two"
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/view_background"
+                        android:layout_toRightOf="@+id/txt_manual1"
+                        android:layout_below="@id/viewHorizontal11"
+                        android:layout_marginStart="16dp">
+                    </View>
+
+                    <TextView
+                        android:id="@+id/txt_year2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewHorizontal11"
+                        android:layout_marginStart="16dp"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/view3two"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/statusbar_color"
+                        android:text="2015">
+                    </TextView>
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

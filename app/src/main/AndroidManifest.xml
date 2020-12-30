@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guidetoaddis">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/guideappicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/guideappicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Guidetoaddis"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".TermsandPolicy"></activity>
+        <activity android:name=".Review" />
+        <activity android:name=".OwnerAddVehicle" />
+        <activity android:name=".PaymentScreen" />
+        <activity android:name=".FindCars" />
+        <activity android:name=".CarListing" />
+        <activity android:name=".TripHistory" />
+        <activity android:name=".Profile" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".support_contact" />
+        <activity android:name=".AllProductActivity" />
+        <activity android:name=".product_detail" />
+        <activity android:name=".TermsPrivacy" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".Signup" />
+        <activity android:name=".SigninActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item
+            android:id="@+id/browsecars"
+            android:icon="@drawable/car"
+            android:title="Browse Cars"/>
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon ="@drawable/dashboard"
+            android:title="Dashboard"/>
+        <!--<item
+            android:id="@+id/add_vehicle"
+            android:icon="@drawable/ic_baseline_add_box_24"
+            android:title="Add Vehicle"/>-->
+
+
+        <item
+            android:id="@+id/listcar"
+            android:icon="@drawable/listcar"
+            android:title="List your Car"/>
+
+
+
+        <item
+            android:id="@+id/triphistory"
+            android:icon="@drawable/history"
+            android:title="Trip History"/>
+
+        <item
+            android:id="@+id/reviews"
+            android:icon="@drawable/ic_baseline_rate_review_24"
+            android:title="Review"/>
+
+
+        <item
+            android:id="@+id/favorites"
+            android:icon="@drawable/heart"
+            android:title="Favorites"/>
+
+
+        <item
+            android:id="@+id/account"
+            android:icon="@drawable/account"
+            android:title="Account"/>
+
+
+
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/call"
+            android:title="Contact Support"/>
+
+        <item
+            android:id="@+id/terms_conditions"
+            android:icon="@drawable/ic_baseline_terms_24"
+            android:title="Terms &amp; Conditions"/>
+
+        <item
+            android:id="@+id/privacy_policy"
+            android:icon="@drawable/ic_baseline_policy_24"
+            android:title="Privacy Policy"/>
+
+
+
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout"/>
+
+</menu>
+
+    <!--  android:icon="@drawable/ic_portrait_black_24dp"
+      android:icon="@drawable/ic_brightness_high_black_24dp"
+      android:icon="@drawable/ic_local_grocery_store_black_24dp"-->

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Guidetoaddis</string>
+    <string name="txt_newuser">Not a Member? <u><b>Join Now.</b></u></string>
+    <string name="txt_alreadyuser">Already User? <u><b>Login Here.</b></u></string>
+    <string name="txt_findcar"><![CDATA[Easy & Experienced Way to Rent a Car]]></string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_dl">A valid driving license from the country of residence and or an international driving permit is required. The hirer must be over 25 years of age and have held a valid driving license for a minimum of two years. He/ she must also be in possession of proper means of identification other than a driving license.</string>
+    <string name="text_deposit">For self-drive option a deposit/authorization equivalent to the estimated total cost of the hire plus $1,000.00 is required by credit card or cash. The card is only charged at the end of a rental with the finalized amount.</string>
+    <string name="text_insurance">All our vehicles are insured but, in all cases, unless by willful or negligent damage the first $1000.00 of any damage is payable by the hirer. Loss/ damage of tires, tool and windshield/ glasses are not covered by insurance.</string>
+    <string name="text_theftprotection">"The vehicle must be locked when unattended. The vehicle must not be parked in a public area for long periods. The hirer is responsible for the security of vehicle and in the event of theft is liable for payment of $1000.00. The hirer must not carry passengers for reward or gain.  "</string>
+    <string name="text_carhire_agreement">Self-drive cars are hired subject to the Company’s standard form of agreement. Notwithstanding the above conditions the Company reserves the right to refuse a hire at any time without assigning any reasons.</string>
+    <string name="text_privacypolicy">We can’t help you make a booking or request a quote without certain information. When you do either of those things, we ask you for the information we need so we can give you what you want. This is pretty standard stuff and may include your name, age, date, place of birth and contact details (email, address and phone number). It can also include information about your passport, identity card and driving license – AND payment information. We will not share or sale your personal information but for our booking purposes only.</string>
+
+    <string-array name="sort_array">
+        <item>Price : Low to High</item>
+        <item>Price : High to Low</item>
+    </string-array>
+    <string-array name="price_array">
+        <item>$10 - $250+ /day</item>
+        <item>$10 - $250+ /day</item>
+
+    </string-array>
+
+    <string-array name="feature_array">
+        <item>All Features</item>
+        <item>Custom Features</item>
+
+    </string-array>
+
+    <string-array name="months_array">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="years_array">
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+
+</resources>

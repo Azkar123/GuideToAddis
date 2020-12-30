@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OwnerAddVehicle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="24dp">
+
+       <EditText
+           android:id="@+id/car_basicDetail"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:background="@drawable/edittext_background"
+           android:hint="Car Detail"
+           android:paddingStart="16dp"/>
+
+        <EditText
+            android:id="@+id/car_Features"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Car Features"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"/>
+
+        <EditText
+            android:id="@+id/car_rentDetail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Car Features"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"/>
+
+        <EditText
+            android:id="@+id/car_availability"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Car Features"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"/>
+
+
+        <EditText
+            android:id="@+id/car_MileageCap"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Car Features"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"/>
+
+        <EditText
+            android:id="@+id/car_PickupLocation"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Car Features"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"/>
+
+        <EditText
+            android:id="@+id/car_bookingOption"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Car Features"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"/>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <ImageView
+                     android:id="@+id/UploadedImg"
+                     android:layout_marginTop="24dp"
+                     android:layout_width="200dp"
+                     android:layout_height="150dp"
+                     android:src="@drawable/carplaceholder"/>
+
+                 <Button
+                     android:id="@+id/btnUploadCar"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginStart="24dp"
+                     android:text="Upload Car">
+                 </Button>
+             </LinearLayout>
+
+        <TextView
+            android:id="@+id/submit_AddCar"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@drawable/paybtnbackground"
+            android:text="SUBMIT">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingStart="8dp"
+    >
+
+
+
+     <TextView
+         android:id="@+id/txt_filter"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="FILTER"
+         android:textColor="@color/black"
+         android:fontFamily="@font/moderamedium"
+         android:textSize="16dp"
+         android:layout_marginTop="16dp"
+         android:textAlignment="center"
+         android:drawableLeft="@drawable/filter_icon"
+         android:drawablePadding="10dp"
+         android:layout_marginStart="24dp"
+         />
+
+    <View
+        android:id="@+id/filter_1_line"
+        android:layout_below="@id/txt_filter"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        />
+
+       <TextView
+           android:id="@+id/txt_sort"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SORT"
+           android:layout_below="@id/filter_1_line"
+           android:layout_marginStart="24dp"
+           android:layout_marginTop="4dp"
+           android:textAlignment="center"
+           android:textSize="16sp"
+           android:fontFamily="@font/moderamedium"
+           android:textColor="@color/black"
+           />
+
+        <Spinner
+            android:id="@+id/spinner_sort"
+            android:layout_below="@id/txt_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:paddingStart="16sp"
+            android:entries="@array/sort_array"
+            android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/filter_2_line"
+        android:layout_below="@id/spinner_sort"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        />
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRICE"
+        android:layout_below="@id/filter_2_line"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/moderamedium"
+        android:textColor="@color/black"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_price"
+        android:layout_below="@id/txt_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:paddingStart="16sp"
+        android:entries="@array/price_array"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/filter_3_line"
+        android:layout_below="@id/spinner_price"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        />
+
+    <TextView
+        android:id="@+id/txt_feature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FEATURE"
+        android:layout_below="@id/filter_3_line"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/moderamedium"
+        android:textColor="@color/black"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_feature"
+        android:layout_below="@id/txt_feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:paddingStart="16sp"
+        android:entries="@array/feature_array"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/filter_4_line"
+        android:layout_below="@id/spinner_feature"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VEHICLE TYPE"
+        android:layout_below="@id/filter_4_line"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/moderamedium"
+        android:textColor="@color/black"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_vehicle"
+        android:layout_below="@id/txt_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:paddingStart="16sp"
+        android:entries="@array/feature_array"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:id="@+id/filter_5_line"
+        android:layout_below="@id/spinner_vehicle"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_allmake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALL MAKE"
+        android:layout_below="@id/filter_5_line"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/moderamedium"
+        android:textColor="@color/black"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_allmake"
+        android:layout_below="@id/txt_allmake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:paddingStart="16sp"
+        android:entries="@array/feature_array"
+        android:layout_marginTop="10dp"/>
+
+          <Button
+              android:id="@+id/btn_SubmitFilter"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/spinner_allmake"
+              android:layout_marginTop="24dp"
+              android:gravity="center"
+              android:layout_centerInParent="true"
+              android:backgroundTint="@color/golden_yellow"
+              android:text="Add Filter"
+              android:textColor="@color/black"
+              android:layout_marginBottom="16dp"
+              android:textAlignment="center">
+          </Button>
+
+</RelativeLayout>
